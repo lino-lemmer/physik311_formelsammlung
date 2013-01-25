@@ -18,27 +18,27 @@
 
 
 	\section{Mathematische Grundlagen}
-	\subsection{Komplexe Exponentialfunktion}
-		\begin{align*}
-			\exp{ix}&=\cos\del{x}+\i\sin\del{x}\\
-			\abs{\exp{ix}}&=\exp{ix}\exp{-ix}\\
-			\sin\del x&=\frac{1}{2\i}\del{\exp{\i x}-\exp{-\i x}}\\
-			\cos\del x&=\half\del{\exp{\i x}+\exp{-\i x}}
-		\end{align*}
+		\subsection{Komplexe Exponentialfunktion}
+			\begin{align*}
+				\exp{ix}&=\cos\del{x}+\i\sin\del{x}\\
+				\abs{\exp{ix}}&=\exp{ix}\exp{-ix}\\
+				\sin\del x&=\frac{1}{2\i}\del{\exp{\i x}-\exp{-\i x}}\\
+				\cos\del x&=\half\del{\exp{\i x}+\exp{-\i x}}
+			\end{align*}
 
 		\subsection{Fourier-Reihen-Entwicklung}
-		\begin{align*}
-			f\del{t}&=\frac{a_0}{2}+\sum_{n=1}^\infty a_n\cos\del{n\omega t}+b_n\sin\del{n\omega t}\\
-			a_n&=\frac{2}{T}\int_c^{c+T}\dif t \, f\del{t}\cos\del{n\omega t}\\
-			b_n&=\frac{2}{T}\int_c^{c+T}\dif t \, f\del{t}\sin\del{n\omega t}\\
-			\text{wobei gilt:}\qquad\omega&=\frac{2\pi}{T}
-		\end{align*}
+			\begin{align*}
+				f\del{t}&=\frac{a_0}{2}+\sum_{n=1}^\infty a_n\cos\del{n\omega t}+b_n\sin\del{n\omega t}\\
+				a_n&=\frac{2}{T}\int_c^{c+T}\dif t \, f\del{t}\cos\del{n\omega t}\\
+				b_n&=\frac{2}{T}\int_c^{c+T}\dif t \, f\del{t}\sin\del{n\omega t}\\
+				\text{wobei gilt:}\qquad\omega&=\frac{2\pi}{T}
+			\end{align*}
 
 		\subsection{Fourier-Transformation}
-		\begin{align*}
-			f\del{\omega}&=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty\dif tf\del{t}\exp{-i\omega t}\\
-			f\del{t}&=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty\dif \omega f\del{\omega}\exp{-i\omega t}
-		\end{align*}
+			\begin{align*}
+				f\del{\omega}&=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty\dif tf\del{t}\exp{-i\omega t}\\
+				f\del{t}&=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty\dif \omega f\del{\omega}\exp{-i\omega t}
+			\end{align*}
 
 	\section{Elektromagnetische Welle}
 		\begin{align*}
