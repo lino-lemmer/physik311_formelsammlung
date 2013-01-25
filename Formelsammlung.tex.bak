@@ -128,16 +128,19 @@
 			\intertext{Im Fall einer dünnen Linse erhält man (Linsenschleifergleichung)}
 				\frac{1}{f}&=\del{n-1}\del{\frac{1}{r_1}-\frac{1}{r_2}}
 			\end{align*}
-			Folgende Linsenfehler gibt es:
+			\textbf{Folgende Linsenfehler gibt es:}
+			\begin{itemize}
+			\item
+				sphärische Aberration: Strahlen, die einen unterschiedlichen Abstand zur optischen Achse haben, werden unterschiedlich stark gebrochen. Folge: Kaustik.
+			\item
+				chromatische Aberration: Aufgrund des unterschiedlichen Brechungsindex bei unterschiedlichen Wellenlängen, werden verschiedene Farben verschieden stark gebrochen.
+			\end{itemize}
+			\textbf{Eher weniger wichtige Linsenfehler sind:}
 			\begin{itemize}
 			\item
 				Koma: Schief einfallende Strahlen werden, da sie unterschiedliche Bereiche der Linse durchlaufen nicht exakt in einem Punkt abgebildet.
 			\item
 				Astigmatismus: Schief einfallende Strahlen werden je nach Ebene unterschiedlich gebündelt, daher ist die Form der Querschnittsfläche des Strahlenbündels nicht konstant.
-			\item
-				sphärische Aberration: Strahlen, die einen unterschiedlichen Abstand zur optischen Achse haben, werden unterschiedlich stark gebrochen. Folge: Kaustik.
-			\item
-				chromatische Aberration: Aufgrund des unterschiedlichen Brechungsindex bei unterschiedlichen Wellenlängen, werden verschiedene Farben verschieden stark gebrochen.
 			\end{itemize}
 
 	\section{Matrizenoptik}
@@ -202,7 +205,7 @@
  			\intertext{ergibt sich}
  				\alpha_{\text{max}}&=\arcsin\del{\frac{n\lambda}{s}}\approx\frac{n\lambda}{s}\\
  				d_{\text{max}}&\approx D\frac{n\lambda}{s}\\
- 				\alpha_{\text{min}}&= \arcsin \del{\frac{\del{n+\half}\lambda}{s}} \approx\frac{\del{n+\half}\lambda}{s}\\
+ 	
  				d_{\text{min}}&\approx D\frac{\del{n+\half}\lambda}{s}
  			\end{align*}
 
