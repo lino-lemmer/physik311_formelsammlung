@@ -51,9 +51,7 @@
 		\textbf{Phasengeschwindigkeit:}
 		\begin{align*}
 			v_{\text{ph}}&=\frac{\omega}{k}
-		\end{align*}
-		\textbf{Gruppengeschwindigkeit:}
-		\begin{align*}
+		\intertext{Gruppengeschwindigkeit:}
 			v_{\text{gr}}&=\dpd{\omega}k\\
 			&=v_{\text{ph}}+k\dod{v_{\text{ph}}}k\\
 			E&=cB\\
@@ -64,7 +62,7 @@
 			\vec S&=\vec E\times \vec H\\
 			\abs{\vec S}&=I
 		\end{align*}
-		\textbf{Fresnel'sche Formeln:} \\
+		\textbf{Fresnel'sche Formeln: \\
 		\hfill \\
 		Der Index $p$ bezeichnet parallel-, $s$ senkrecht-polarisiertes Licht, die Indices $i$, $r$ und $t$ bezeichnen die einfallende, transmittierte und reflektierte Amplitude von $E$:
 		\begin{align*}
