@@ -26,8 +26,8 @@
 			\cos\del x&=\half\del{\exp{\i x}+\exp{-\i x}}
 		\intertext{Fourier-Reihen-Entwicklung}
 			f\del{t}&=\frac{a_0}{2}+\sum_{n=1}^\infty a_n\cos\del{n\omega t}+b_n\sin\del{n\omega t}\\
-			a_n&=\frac{2}{T}\int_c^{c+T}\dif tf\del{t}\cos\del{n\omega t}\\
-			b_n&=\frac{2}{T}\int_c^{c+T}\dif tf\del{t}\sin\del{n\omega t}\\
+			a_n&=\frac{2}{T}\int_c^{c+T}\dif t \, f\del{t}\cos\del{n\omega t}\\
+			b_n&=\frac{2}{T}\int_c^{c+T}\dif t \, f\del{t}\sin\del{n\omega t}\\
 			\text{wobei gilt:}\qquad\omega&=\frac{2\pi}{T}
 		\intertext{Fourier-Transformation}
 			f\del{\omega}&=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty\dif tf\del{t}\exp{-i\omega t}\\
