@@ -10,22 +10,36 @@
 \maketitle
 	Dies ist eine Zusammenfassung der wichtigsten Formeln für die Klausur des Moduls \emph{Experimentalphysik III - Optik und Wellenmechanik}. Ich erhebe keinen Anspruch auf Vollständig- oder Richtigkeit der Formeln.
 
+	\begin{center}
+		\includegraphics[height=5ex]{by-sa.pdf}
+
+		Dieses Werk bzw. Inhalt steht unter einer \href{http://creativecommons.org/licenses/by-sa/3.0/deed.de}{Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 3.0 Unported Lizenz}.
+	\end{center}
+
+
 	\section{Mathematische Grundlagen}
-		Komplexe Exponentialfunktion
-		\begin{align*}
-			\exp{\i x}&=\cos\del{x}+\i\sin\del{x}\\
-			\abs{\exp{\i x}}&=\exp{\ix}\exp{-\i x}\\
-			\sin\del x&=\half\del{\exp{\i x}-\exp{-\i x}}\\
-			\cos\del x&=\half\del{\exp{\i x}+\exp{-\i x}}
-		\intertext{Fourier-Reihen-Entwicklung}
-			f\del{t}&=\frac{a_0}{2}+\sum_{n=1}^\infty a_n\cos\del{n\omega t}+b_n\sin\del{n\omega t}\\
-			a_n&=\frac{2}{T}\int_c^{c+T}\dif tf\del{t}\cos\del{n\omega t}\\
-			b_n&=\frac{2}{T}\int_c^{c+T}\dif tf\del{t}\sin\del{n\omega t}\\
-			\text{wobei gilt:}\qquad\omega&=\frac{2\pi}{T}
-		\intertext{Fourier-Transformation}
-			f\del{\omega}&=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty\dif tf\del{t}\exp{-i\omega t}\\
-			f\del{t}&=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty\dif \omega f\del{\omega}\exp{-i\omega t}
-		\end{align*}
+
+		\subsection{Komplexe Exponentialfunktion}
+			\begin{align*}
+				\exp{\i x}&=\cos\del{x}+\i\sin\del{x}\\
+				\abs{\exp{\i x}}&=\exp{\i x}\exp{-\i x}\\
+				\sin\del x&=\frac{1}{2\i}\del{\exp{\i x}-\exp{-\i x}}\\
+				\cos\del x&=\half\del{\exp{\i x}+\exp{-\i x}}
+			\end{align*}
+
+		\subsection{Fourier-Reihen-Entwicklung}
+			\begin{align*}
+				f\del{t}&=\frac{a_0}{2}+\sum_{n=1}^\infty a_n\cos\del{n\omega t}+b_n\sin\del{n\omega t}\\
+				a_n&=\frac{2}{T}\int_c^{c+T}\dif t \, f\del{t}\cos\del{n\omega t}\\
+				b_n&=\frac{2}{T}\int_c^{c+T}\dif t \, f\del{t}\sin\del{n\omega t}\\
+				\text{wobei gilt:}\qquad\omega&=\frac{2\pi}{T}
+			\end{align*}
+
+		\subsection{Fourier-Transformation}
+			\begin{align*}
+				f\del{\omega}&=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty\dif t \, f\del{t}\exp{-i\omega t}\\
+				f\del{t}&=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty\dif \omega  \, f\del{\omega}\exp{i\omega t}
+			\end{align*}
 
 	\section{Elektromagnetische Welle}
 		\begin{align*}
@@ -216,7 +230,7 @@
  		\subsection{Michelson-Interferometer}
  			Die Intensität in Abhängigkeit vom Ort des bewegten Spiegels. Kein Gangunterschied $\delta$ bei $t=0$.
  			\begin{align*}
- 				I\del t&=\frac{1}{16}I_0\abs{1+\exp{-ik\delta\del t}}^2\\
+ 				I\del t&=\frac{1}{16}I_0\abs{1+\exp{-\i k\delta\del t}}^2\\
  				&=\frac{1}{16}\del{1+\exp{-\i k\delta}}\del{1+\exp{\i k\delta\del t}}\\
  				\delta\del t&=2vt
  			\end{align*}
@@ -245,9 +259,9 @@
 			\end{pmatrix}
 		\intertext{Nun kann man vier Fälle unterscheiden:}
 		\phi_x-\phi_y&=2\pi &\implies\text{linear polarisierte Welle}\\
-		\phi_x-\phi_y&=n2\pi+\frac{\pi}{2}\quad, E_{0x}=E_{0y}\quad &\implies\text{linkzirkular polarisierte Welle}\\
-		\phi_x-\phi_y&=n2\pi-\frac{\pi}{2}\quad, E_{0x}=E_{0y}&\implies\text{linkzirkular polarisierte Welle}\\
-		\phi_x-\phi_y&\neq 2\pi-\frac{\pi}{2}\quad V E_{0x}\neq E_{0y}&\implies\text{elliptisch polarisierte Welle}\\
+		\phi_x-\phi_y&=n2\pi+\frac{\pi}{2}\quad, E_{0x}=E_{0y}\quad &\implies\text{linkszirkular polarisierte Welle}\\
+		\phi_x-\phi_y&=n2\pi-\frac{\pi}{2}\quad, E_{0x}=E_{0y}&\implies\text{linkszirkular polarisierte Welle}\\
+		\phi_x-\phi_y&\neq 2\pi-\frac{\pi}{2}\quad \lor E_{0x}\neq E_{0y}&\implies\text{elliptisch polarisierte Welle}\\
 		\intertext{Malus'sches Gesetz (Intensität einer linear polarisierten Welle nach Durchgang durch einen Linearpolarisator der im Winkel $\alpha$ zur Polarisation der Welle steht:}
 			I&=I_0\cos^2\alpha
 		\end{align*}
