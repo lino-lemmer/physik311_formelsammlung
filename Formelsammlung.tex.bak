@@ -51,7 +51,9 @@
 		\textbf{Phasengeschwindigkeit:}
 		\begin{align*}
 			v_{\text{ph}}&=\frac{\omega}{k}
-		\intertext{Gruppengeschwindigkeit:}
+		\end{align*}
+		\textbf{Gruppengeschwindigkeit:}
+		\begin{align*}
 			v_{\text{gr}}&=\dpd{\omega}k\\
 			&=v_{\text{ph}}+k\dod{v_{\text{ph}}}k\\
 			E&=cB\\
@@ -62,7 +64,7 @@
 			\vec S&=\vec E\times \vec H\\
 			\abs{\vec S}&=I
 		\end{align*}
-		\textbf{Fresnel'sche Formeln: \\
+		\textbf{Fresnel'sche Formeln:} \\
 		\hfill \\
 		Der Index $p$ bezeichnet parallel-, $s$ senkrecht-polarisiertes Licht, die Indices $i$, $r$ und $t$ bezeichnen die einfallende, transmittierte und reflektierte Amplitude von $E$:
 		\begin{align*}
@@ -78,18 +80,18 @@
 		\end{align*}
 
 	\section{Strahlenoptik}
-		Lichtdruck
+		\textbf{Lichtdruck}
 			\begin{align*}
 				P_S&=\frac{I}{c}=\frac{W}{Ac}
 			\end{align*}
 
 		\subsection{Brechung}
-			Fermat'sches Prinzip:\\
+			\textbf{Fermat'sches Prinzip:} \\
 			Licht nimmt im Medium den kürzesten optischen Weg.
 			\begin{align*}
-			\intertext{Brechungsindex $n$}
+			\intertext{\textbf{Brechungsindex $n$}}
 				n&=\frac{c}{v_{ph}}
-			\intertext{Brechungsgesetz von Snellius}
+			\intertext{\textbf{Brechungsgesetz von Snellius}}
 				\frac{n_1}{n_2}&=\frac{\sin\varphi_2}	{\sin\varphi_1}
 			\intertext{Für die Totalreflexion folgt hieraus}
 				\sin\varphi_T&=\frac{n_1}{n_2}\qquad\text{, mit }n_1<n_2\\
@@ -149,7 +151,7 @@
  					1 & d\\
  					0 & 1
  				\end{pmatrix}&
- 			\intertext{Reflexion am sphärischen Hohlspiegel}
+ 			\intertext{\textbf{Reflexion am sphärischen Hohlspiegel}}
  				\begin{pmatrix}
  					1 & 0\\
  					-\frac{2}{r} & 1
@@ -158,17 +160,17 @@
  					1 & 0\\
  					-\frac{1}{f} & 1
  				\end{pmatrix}
- 			\intertext{Brechung an ebener Fläche}
+ 			\intertext{\textbf{Brechung an ebener Fläche}}
  				\begin{pmatrix}
  					1 & 0\\
  					0 & \frac{n_2}{n_1}
  				\end{pmatrix}
- 			\intertext{Brechung an Kugelfläche}
+ 			\intertext{\textbf{Brechung an Kugelfläche}}
  				\begin{pmatrix}
 					1 & 0\\
 					\del{\frac{n_1}{n_2}-1}\frac{1}{r} & \frac{n_1}{n_2}
  				\end{pmatrix}
- 			\intertext{Dünne Linse in Luft}
+ 			\intertext{\textbf{Dünne Linse in Luft}}
  				\begin{pmatrix}
  					1 & 0\\
 					-\del{n-1}\del{\frac{1}{r_1}-\frac{1}{r_2}} & 1
@@ -230,10 +232,10 @@
  			\end{align*}
 
  		\subsection{Fabry-Perot-Resonator}
- 			Freier Spektralbereich
+ 			\textbf{Freier Spektralbereich}
  			\begin{align*}
  				\Delta\nu&=\frac{c}{2d}
- 			\intertext{Finesse und Reflexivität}
+ 			\intertext{\textbf{Finesse und Reflexivität}}
  				\mathcal{F}&=\frac{\pi\sqrt{R}}{1-R}
  			\end{align*}
 
@@ -260,7 +262,7 @@
 			\end{align*}
 
 	\section{Polarisation}
-		Elektrische Welle:
+		\textbf{Elektrische Welle:}
 		\begin{align*}
 			\vec E&= E_{0x}\vec{e}_x\exp{\i\phi_x} + E_{0y}\vec{e}_y\exp{\i\phi_y}=
 			\begin{pmatrix}
@@ -277,7 +279,7 @@
 		\end{align*}
 
 		\subsection{Doppelbrechung}
-			Optisch einachsiger Kristall:
+			\textbf{Optisch einachsiger Kristall:}
 			\begin{align*}
 				n_o\neq n_{ao}\\
 				n_o<n_{ao}\quad\implies\quad\text{optisch positiv}\\
@@ -373,18 +375,18 @@
 				\end{align*}
 
 	\section{Quantenoptik}
-		Energie von Lichtquanten
+		\textbf{Energie von Lichtquanten}
 		\begin{align*}
 			E&=hf=\frac{hc}{\lambda}
-		\intertext{Unschärferelation}
+		\intertext{\textbf{Unschärferelation}}
 			\Delta p\cdot\Delta x&\geq h
-		\intertext{für statistische Schwankungen}
+		\intertext{\textbf{für statistische Schwankungen}}
 			\sigma_p\cdot\sigma_x&\geq \frac{\hbar}{2}
-		\intertext{De-Broglie-Wellenlänge}
+		\intertext{\textbf{De-Broglie-Wellenlänge}}
 			\lambda_{\text{dB}}&=\frac{h}{p}
-		\intertext{Stefan-Boltzmann-Gesetz}
+		\intertext{\textbf{Stefan-Boltzmann-Gesetz}}
 			P&= 4\pi r^2\sigma T^4
-		\intertext{Wiensches Verschiebungsgesetz}
+		\intertext{\textbf{Wiensches Verschiebungsgesetz}}
 			\lambda_{\text{max}}&=\frac{\unit[2.8978\e{-3}]{m\,K}}{T}
 		\end{align*}
  \end{document}
