@@ -10,7 +10,7 @@
 \maketitle
 	Dies ist eine Zusammenfassung der wichtigsten Formeln für die Klausur des Moduls \textit{Experimentalphysik III - Optik und Wellenmechanik}. Ich erhebe keinen Anspruch auf Vollständig- oder Richtigkeit der Formeln.
 
-	\section{Mathematische Grundlagen}	
+	\section{Mathematische Grundlagen}
 		Komplexe Exponentialfunktion
 		\begin{align*}
 			\exp{ix}&=\cos\del{x}+\i\sin\del{x}\\
@@ -24,12 +24,12 @@
 			\text{wobei gilt:}\qquad\omega&=\frac{2\pi}{T}
 		\intertext{Fourier-Transformation}
 			f\del{\omega}&=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty\dif tf\del{t}\exp{-i\omega t}\\
-			f\del{t}&=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty\dif \omega f\del{\omega}\exp{-i\omega t}			
+			f\del{t}&=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty\dif \omega f\del{\omega}\exp{-i\omega t}
 		\end{align*}
-		
+
 	\section{Elektromagnetische Welle}
 		\begin{align*}
-			\vec E&=\vec E_0\exp{-\i\del{\omega t-kx}}\\		
+			\vec E&=\vec E_0\exp{-\i\del{\omega t-kx}}\\
 			&=\vec E_0\exp{-\i\varphi}\\
 			k\del\omega&=\frac{\omega}{c}n\del\omega\\
 			\lambda&=\frac{2\pi}{k}
@@ -52,18 +52,18 @@
 			\frac{E_r}{E_i}&=\frac{n_1-n_2}{n_1+n_2}\\
 			R&=\del{\frac{n_1-n_2}{n_1+n_2}}^2
 		\end{align*}
-		
+
 	\section{Strahlenoptik}
 		Lichtdruck
 			\begin{align*}
 				P_S&=\frac{I}{c}=\frac{W}{Ac}
 			\end{align*}
-			
+
 		\subsection{Brechung}
 			Fermat'sches Prinzip:\\
-			Licht nimmt im Medium den kürzesten optischen Weg.		
+			Licht nimmt im Medium den kürzesten optischen Weg.
 			\begin{align*}
-			\intertext{Brechungsindex $n$}			
+			\intertext{Brechungsindex $n$}
 				n&=\frac{c}{v_{ph}}
 			\intertext{Brechungsgesetz von Snellius}
 				\frac{n_1}{n_2}&=\frac{\sin\varphi_2}	{\sin\varphi_1}
@@ -72,7 +72,7 @@
 			\intertext{Der Winkel unter dem nur der senkrecht zur Einfallsebene polarisierte Teil der Welle reflektiert wird (Brewster-Winkel):}
 				\varphi_B&=\arctan\del{\frac{n_2}{n_1}}\quad,\quad n_1<n_2\quad,\quad \varphi_1+\varphi_2=\varphi_B+\varphi_2=\frac{\pi}{2}
 			\end{align*}
-			
+
 		\subsection{Hohlspiegel}
 			Abbildungsgleichung im Hohlspiegel
 			\begin{align*}
@@ -86,7 +86,7 @@
 			\intertext{Virtuelle Bilder gibt es bei folgender Konstellation}
 				\frac{B}{G}&<0\qquad\text{, für }g<f
 			\end{align*}
-			
+
 		\subsection{Kugelflächen}
 			Abbildungsgleichung für Brechung an Kugelflächen. Hier ist $r>0$ für konvexe Kugelflächen
 			\begin{align*}
@@ -113,11 +113,11 @@
 			\item
 				chromatische Aberration: Aufgrund des unterschiedlichen Brechungsindex bei unterschiedlichen Wellenlängen, werden verschiedene Farben verschieden stark gebrochen.
 			\end{itemize}
-			
+
 	\section{Matrizenoptik}
  		Allgemein: Darstellung des Strahlengangs durch Vektor $\begin{pmatrix}r\\\varphi\end{pmatrix}$, wobei $r$ den Abstand und $\varphi$ den Winkel zur optischen Achse bezeichnet.\\
  	Die Änderung von $r$ und $\varphi$ durch ein optisches Instrument kann durch eine $2\times2$ Transformationsmatrix (TFM) dargestellt werden. Die TFM der Kombination mehrerer optischen Instrumente ergibt sich dann aus der Multiplikation der einzelnen TFM.
- 	
+
  		\subsection{Transformationsmatrizen}
  			Lineare Bewegung:
  			\begin{align*}
@@ -128,11 +128,11 @@
  			\intertext{Reflexion am sphärischen Hohlspiegel}
  				\begin{pmatrix}
  					1 & 0\\
- 					-\frac{2}{r} & 1 
+ 					-\frac{2}{r} & 1
  				\end{pmatrix}&=
  				\begin{pmatrix}
  					1 & 0\\
- 					-\frac{1}{f} & 1 
+ 					-\frac{1}{f} & 1
  				\end{pmatrix}
  			\intertext{Brechung an ebener Fläche}
  				\begin{pmatrix}
@@ -161,9 +161,9 @@
  				h_g&=\del{1-D}f\\
  				h_b&=\del{1-A}f
  			\end{align*}
- 			
+
  	\section{Interferenz und Beugung}
- 	
+
  		\subsection{Doppelspalt}
  			Mit
  			\begin{align*}
@@ -179,7 +179,7 @@
  				\alpha_{\text{min}}&= \arcsin \del{\frac{\del{n+\half}\lambda}{s}} \approx\frac{\del{n+\half}\lambda}{s}\\
  				d_{\text{min}}&\approx D\frac{\del{n+\half}\lambda}{s}
  			\end{align*}
- 			
+
  		\subsection{Gitter}
  			Bedingung für Maximum: Siehe Doppelspalt.\newline
  			Zusätzlich gilt mit
@@ -188,7 +188,7 @@
  				n&=\text{Anzahl der Nebenmaxima}\\\\
  				n&=N-2
  			\end{align*}
- 			
+
  		\subsection{Einzelspalt}
  			Mit
  			\begin{align*}
@@ -204,7 +204,7 @@
  				\alpha_{\text{max}}&= \arcsin \del{\frac{\del{n+\half}\lambda}{b}} \approx\frac{\del{n+\half}\lambda}{b}\\
  				d_{\text{max}}&\approx D\frac{\del{n+\half}\lambda}{b}
  			\end{align*}
- 			
+
  		\subsection{Fabry-Perot-Resonator}
  			Freier Spektralbereich
  			\begin{align*}
@@ -212,7 +212,7 @@
  			\intertext{Finesse und Reflexivität}
  				\mathcal{F}&=\frac{\pi\sqrt{R}}{1-R}
  			\end{align*}
- 			
+
  		\subsection{Michelson-Interferometer}
  			Die Intensität in Abhängigkeit vom Ort des bewegten Spiegels. Kein Gangunterschied $\delta$ bei $t=0$.
  			\begin{align*}
@@ -233,15 +233,15 @@
 				A_N&=1.22\frac{\lambda}{2d}
 			\intertext{für eine Linse gilt die Näherung}
 				&=\frac{d}{2f}
-			\end{align*}						
+			\end{align*}
 
 	\section{Polarisation}
 		Elektrische Welle:
 		\begin{align*}
 			\vec E&= E_{0x}\vec{e}_x\exp{\i\phi_x} + E_{0y}\vec{e}_y\exp{\i\phi_y}=
 			\begin{pmatrix}
-				E_{0x}\exp{\i\phi_x}	\\	
-				E_{0y}\exp{\i\phi_y}	
+				E_{0x}\exp{\i\phi_x}	\\
+				E_{0y}\exp{\i\phi_y}
 			\end{pmatrix}
 		\intertext{Nun kann man vier Fälle unterscheiden:}
 		\phi_x-\phi_y&=2\pi &\implies\text{linear polarisierte Welle}\\
@@ -251,7 +251,7 @@
 		\intertext{Malus'sches Gesetz (Intensität einer linear polarisierten Welle nach Durchgang durch einen Linearpolarisator der im Winkel $\alpha$ zur Polarisation der Welle steht:}
 			I&=I_0\cos^2\alpha
 		\end{align*}
-		
+
 		\subsection{Doppelbrechung}
 			Optisch einachsiger Kristall:
 			\begin{align*}
@@ -260,7 +260,7 @@
 				n_1>n_3\quad\implies\quad\text{}
 			\end{align*}
 			\fehlt
-		
+
 		\subsection{Jones Formalismus}
 			\subsubsection{Jones-Vektor}
 				\begin{align*}
@@ -274,7 +274,7 @@
 					\begin{pmatrix}
 						1\\0
 					\end{pmatrix}
-				\intertext{linear in $y$-Richtung polarisi	ertes Licht:}	
+				\intertext{linear in $y$-Richtung polarisi	ertes Licht:}
 					\begin{pmatrix}
 						0\\1
 					\end{pmatrix}
@@ -294,7 +294,7 @@
 						1\\-\i
 					\end{pmatrix}
 				\end{align*}
-				
+
 			\subsubsection{Jones-Matrix}
 				Linearpolarisator in $x$-Richtung
 				\begin{align*}
@@ -345,9 +345,9 @@
 					\begin{pmatrix}
 						\cos\theta & -\sin\theta\\
 						\sin\theta & \cos\theta
-					\end{pmatrix}					 
+					\end{pmatrix}
 				\end{align*}
-		
+
 	\section{Quantenoptik}
 		Energie von Lichtquanten
 		\begin{align*}
