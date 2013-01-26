@@ -133,34 +133,34 @@
  		\subsection{Transformationsmatrizen}
  			Lineare Bewegung:
  			\begin{align*}
- 				\begin{pmatrix}
+ 				&\begin{pmatrix}
  					1 & d\\
  					0 & 1
  				\end{pmatrix}&
  			\intertext{Reflexion am sphärischen Hohlspiegel}
- 				\begin{pmatrix}
+ 				&\begin{pmatrix}
  					1 & 0\\
  					-\frac{2}{r} & 1
- 				\end{pmatrix}&=
+ 				\end{pmatrix}=
  				\begin{pmatrix}
  					1 & 0\\
  					-\frac{1}{f} & 1
  				\end{pmatrix}
  			\intertext{Brechung an ebener Fläche}
- 				\begin{pmatrix}
+ 				&\begin{pmatrix}
  					1 & 0\\
  					0 & \frac{n_2}{n_1}
  				\end{pmatrix}
  			\intertext{Brechung an Kugelfläche}
- 				\begin{pmatrix}
+ 				&\begin{pmatrix}
 					1 & 0\\
 					\del{\frac{n_1}{n_2}-1}\frac{1}{r} & \frac{n_1}{n_2}
  				\end{pmatrix}
  			\intertext{Dünne Linse in Luft}
- 				\begin{pmatrix}
+ 				&\begin{pmatrix}
  					1 & 0\\
 					-\del{n-1}\del{\frac{1}{r_1}-\frac{1}{r_2}} & 1
- 				\end{pmatrix}&=
+ 				\end{pmatrix}=
  				\begin{pmatrix}
  					1 & 0\\
  					-\frac{1}{f} & 1
@@ -211,15 +211,15 @@
  				n&\in\mathbb{Z}
  			\intertext{ergibt sich}
  				\alpha_{\text{min}}&=\arcsin\del{\frac{n\lambda}{b}}\approx\frac{n\lambda}{b}\\
- 				d_{\text{min}}&\approx D\frac{n\lambda}{b}\\
  				\alpha_{\text{max}}&= \arcsin \del{\frac{\del{n+\half}\lambda}{b}} \approx\frac{\del{n+\half}\lambda}{b}\\
+ 				d_{\text{min}}&\approx D\frac{n\lambda}{b}\\
  				d_{\text{max}}&\approx D\frac{\del{n+\half}\lambda}{b}
  			\end{align*}
 
  		\subsection{Fabry-Perot-Resonator}
  			Freier Spektralbereich
  			\begin{align*}
- 				\Delta\nu&=\frac{c}{2d}
+ 				\Delta\nu&=\frac{c}{2d} \qquad \text{$d$ ist Abstand der Maxima}
  			\intertext{Finesse und Reflexivität}
  				\mathcal{F}&=\frac{\pi\sqrt{R}}{1-R}
  			\end{align*}
@@ -255,13 +255,14 @@
 				E_{0y}\exp{\i\phi_y}
 			\end{pmatrix}
 		\intertext{Nun kann man vier Fälle unterscheiden:}
-		\phi_x-\phi_y&=2\pi &\implies\text{linear polarisierte Welle}\\
-		\phi_x-\phi_y&=n2\pi+\frac{\pi}{2}\quad \land\quad E_{0x}=E_{0y}\quad &\implies\text{linkszirkular polarisierte Welle}\\
-		\phi_x-\phi_y&=n2\pi-\frac{\pi}{2}\quad \land\quad E_{0x}=E_{0y}&\implies\text{linkszirkular polarisierte Welle}\\
-		\phi_x-\phi_y&\neq 2\pi-\frac{\pi}{2}\quad \lor\quad E_{0x}\neq E_{0y}&\implies\text{elliptisch polarisierte Welle}\\
-		\intertext{Malus'sches Gesetz (Intensität einer linear polarisierten Welle nach Durchgang durch einen Linearpolarisator der im Winkel $\alpha$ zur Polarisation der Welle steht:}
-			I&=I_0\cos^2\alpha
+			\phi_x-\phi_y&=2\pi &&\implies\text{linear polarisierte Welle}\\
+			\phi_x-\phi_y&=n2\pi+\frac{\pi}{2}\quad \land\quad E_{0x}=E_{0y}\quad &&\implies\text{linkszirkular polarisierte Welle}\\
+			\phi_x-\phi_y&=n2\pi-\frac{\pi}{2}\quad \land\quad E_{0x}=E_{0y}&&\implies\text{linkszirkular polarisierte Welle}\\
+			\phi_x-\phi_y&\neq 2\pi-\frac{\pi}{2}\quad \lor\quad E_{0x}\neq E_{0y}&&\implies\text{elliptisch polarisierte Welle}\\
 		\end{align*}
+		Malus'sches Gesetz}\newline 
+		Intensität einer linear polarisierten Welle nach Durchgang durch einen Linearpolarisator der im Winkel $\alpha$ zur Polarisation der Welle ist:
+		\[ I = I_0\cos^2 \alpha \]
 
 		\subsection{Doppelbrechung}
 			Optisch einachsiger Kristall:
