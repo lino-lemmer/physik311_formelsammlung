@@ -90,11 +90,11 @@
 			Licht nimmt im Medium den kürzesten optischen Weg.
 			\begin{align*}
 			\intertext{\textbf{Brechungsindex $n$}}
-				n&=\frac{c}{v_{ph}}
+				n_i&=\frac{c}{v_{ph}}
 			\intertext{\textbf{Brechungsgesetz von Snellius}}
-				\frac{n_1}{n_2}&=\frac{\sin\varphi_2}	{\sin\varphi_1}
+				\frac{n_1}{n_2} &= \frac{\sin\varphi_2}	{\sin\varphi_1}
 			\intertext{Für die Totalreflexion folgt hieraus}
-				\sin\varphi_T&=\frac{n_1}{n_2}\qquad\text{, mit }n_1<n_2\\
+				\sin\varphi_T &= \frac{n_1}{n_2}\qquad\text{, mit }n_1<n_2\\
 			\intertext{Der Winkel unter dem nur der senkrecht zur Einfallsebene polarisierte Teil der Welle reflektiert wird (Brewster-Winkel):}
 				\varphi_B&=\arctan\del{\frac{n_2}{n_1}}\quad,\quad n_1<n_2\quad,\quad \varphi_1+\varphi_2=\varphi_B+\varphi_2=\frac{\pi}{2}
 			\end{align*}
@@ -125,7 +125,7 @@
 				\frac{F}{g}+\frac{f}{b}&=1
 			\intertext{Bei mehreren Brechungen addieren sich die Brechkräfte, oder auch die reziproken Brennweiten}
 				\frac{1}{f}&=\frac{1}{f_1}+\frac{1}{f_2}
-			\intertext{Im Fall einer dünnen Linse erhält man (Linsenschleifergleichung)}
+			\intertext{Im Fall einer \textbf{dünnen Linse} erhält man (Linsenschleifergleichung)}
 				\frac{1}{f}&=\del{n-1}\del{\frac{1}{r_1}-\frac{1}{r_2}}
 			\end{align*}
 			\textbf{Folgende Linsenfehler gibt es:}
@@ -144,10 +144,12 @@
 			\end{itemize}
 
 	\section{Matrizenoptik}
- 		Allgemein: Darstellung des Strahlengangs durch Vektor $\begin{pmatrix}r\\\varphi\end{pmatrix}$, wobei $r$ den Abstand und $\varphi$ den Winkel zur optischen Achse bezeichnet.\\
- 	Die Änderung von $r$ und $\varphi$ durch ein optisches Instrument kann durch eine $2\times2$ Transformationsmatrix (TFM) dargestellt werden. Die TFM der Kombination mehrerer optischen Instrumente ergibt sich dann aus der Multiplikation der einzelnen TFM.
+	
+	\subsection{Allgemein:}
+ 		 Darstellung des Strahlengangs durch Vektor $\begin{pmatrix}r\\\varphi\end{pmatrix}$, wobei 			 $r$ den Abstand und $\varphi$ den Winkel zur optischen Achse bezeichnet.\\
+ 		 Die Änderung von $r$ und $\varphi$ durch ein optisches Instrument kann durch eine $2\times2$ 			 Transformationsmatrix (TFM) dargestellt werden. Die TFM der Kombination mehrerer optischen 			 Instrumente ergibt sich dann aus der Multiplikation der einzelnen TFM. Die Matrizen werden in entgegengesetzter Richtung zum Lichtweg mit
 
- 		\subsection{Transformationsmatrizen}
+ 	\subsection{Transformationsmatrizen}
  			Lineare Bewegung:
  			\begin{align*}
  				\begin{pmatrix}
